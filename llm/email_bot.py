@@ -5,8 +5,8 @@ from dotenv import load_dotenv
 import os
 import json
 
-load_dotenv(dotenv_path="/Users/abhijit/Desktop/email_bot/.env")
-client = Groq()
+# load_dotenv(dotenv_path="/Users/abhijit/Desktop/email_bot/.env")
+client = Groq(api_key="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")
 
 def extract_email_details(single_input):
     extraction_prompt = f"""
